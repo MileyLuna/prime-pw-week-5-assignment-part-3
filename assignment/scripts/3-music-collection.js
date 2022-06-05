@@ -52,28 +52,37 @@ console.log('Rozes:', addToCollection('Crazy','Rozes','2022'));
 collection.push(collectSeven);
 
 console.log('Music options:', collection);
+
 //end test function
 
 //start function 2
 console.log('---Function 2---');
 
+
 function showCollection(array) {
     console.log('Numbers in array is:', 7);
     let i = 0;
     for (let i=0; i < collection.length; i++){
-        console.log(title, 'by', artist, published in 'yearPublished');
+        if (array[i] == collection.length);
+            console.log(collection.title + 'by' + collection.artist + 'published in' + collection.yearPublished);
 
     }
 
 }
 
 
-console.log(showCollection());
+//showCollection('collection');
+console.log(showCollection('collection'));
+
+//showCollection('JoJo');
+//console.log(showCollection('JoJo'));
+
+
 
 /*for (let crewMember in spaceship.crew) {
     console.log(`${crewMember}: ${spaceship.crew[crewMember].name}`)
   };
-*/
+
 
 //end function 2
 
@@ -83,8 +92,29 @@ console.log(showCollection());
 //start function 3
 console.log('---Function 3---');
 
-function findByArtist(Faouzia) {
+let findIt = [];
 
+function findByArtist(artist) {
+    for (let i=0; i < collection.length; i++){
+        if (collection[i]== artist) {
+            return findIt.push(artist);
+            break;
+        }
+    }
 }
+
+findByArtist('Faouzia');
+console.log('Match!:', findByArtist('Faouzia'));
+
+console.log(findIt);
+
+
+let i = 0;
+
+while (i < collection.length) {
+  console.log('Names:', collection[i]);
+  i++;
+}
+*/
 
 //end function 3
