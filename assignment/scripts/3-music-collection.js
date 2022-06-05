@@ -79,8 +79,8 @@ function showCollection(array) {
     }
 };
 
-//showCollection('collection');
-console.log(showCollection('collection'));
+showCollection();
+//console.log(showCollection('collection'));
 
 //end function 2
 
