@@ -71,7 +71,7 @@ console.log('Music options:', collection);
 console.log('---Function 2---');
 
 
-function showCollection(array) {
+function showCollection(array) { //update parameters to array
     console.log('Numbers in array is:', 7);
     let i = 0;
     for (let i=0; i < collection.length; i++){
@@ -107,8 +107,8 @@ function findByArtist(artist) {
     let findIt = [];
     for (let i=0; i < collection.length; i++){
         if (collection[i].artist === artist) {
-            findIt.push(artist);
-            break;
+            findIt.push(collection[i]); //update to collection[i]
+            //break; not nescessary 
         }
     }
     return findIt;
@@ -118,6 +118,8 @@ function findByArtist(artist) {
 
 //findByArtist('JoJo');
 console.log('Match!:', findByArtist('JoJo'));
+console.log('should return empty array', findByArtist ('Brittany'));
+
 
 
 
